@@ -1,8 +1,6 @@
 import React from 'react';
-import Nav from './Nav/Nav';
-
-
-
+import Nav from '../Nav';
+import styles from './portfolio.module.scss'
 
 function Portfolio() {
     return (
@@ -12,9 +10,7 @@ function Portfolio() {
             Portfolio
         </h1>
     </div>
-
     );
     }
-
 
     export default Portfolio

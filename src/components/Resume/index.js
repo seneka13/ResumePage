@@ -1,8 +1,6 @@
 import React from 'react';
-import Nav from './Nav/Nav';
-
-
-
+import Nav from '../Nav';
+import style from './resume.module.scss'
 
 function Resume() {
     return (
@@ -12,7 +10,6 @@ function Resume() {
             Resume
         </h1>
     </div>
-
     );
     }
 
