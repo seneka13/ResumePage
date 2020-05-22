@@ -1,16 +1,14 @@
 import React from 'react';
 import Nav from '../Nav';
+import PageWrapper from '../PageWrapper';
 import styles from './contact.module.scss';
 
 
 function Contact() {
     return (
-    <div>
-        <Nav/>
-        <h1 className={styles['clas']}>
-            Contact
-        </h1>
-    </div>
+    <PageWrapper>
+        Contact
+    </PageWrapper>
     );
     }
 

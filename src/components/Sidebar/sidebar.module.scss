@@ -1,0 +1,17 @@
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}

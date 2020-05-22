@@ -1,15 +1,13 @@
 import React from 'react';
 import Nav from '../Nav';
+import PageWrapper from '../PageWrapper'
 import style from './resume.module.scss'
 
 function Resume() {
     return (
-    <div>
-        <Nav/>
-        <h1>
+        <PageWrapper>
             Resume
-        </h1>
-    </div>
+        </PageWrapper>
     );
     }
 
