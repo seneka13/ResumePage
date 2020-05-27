@@ -12,18 +12,19 @@ function Nav() {
     ]
 
     return (
-        <header className={styles["header"]}>
-                {
-                navItem.map(item => ( 
-                <NavLink key={item.id} 
-                activeClassName={styles[item.class]} 
-                exact 
-                to={item.to}>
-                {item.text}
-                </NavLink>
-                ))
+        <div className={styles.header}>
+            {
+            navItem.map(item => ( 
+                    <NavLink key={item.id}
+                    className = {styles.link}
+                    activeClassName={styles[item.class]} 
+                    exact 
+                    to={item.to}>
+                    {item.text}
+                    </NavLink>
+            ))
             }
-        </header>
+        </div>
     );
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
-import Nav from '../Nav';
 import PageWrapper from '../PageWrapper';
 import styles from './contact.module.scss';
 
 
-function Contact() {
+function Contact(props) {
     return (
-    <PageWrapper>
-        Contact
+    <PageWrapper text="gonf">
+        Contactfstewsfdsfsdfsd
+        <h1>авы</h1>
     </PageWrapper>
     );
     }

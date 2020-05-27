@@ -1,15 +1,26 @@
 import React from 'react';
-import Nav from '../Nav';
 import PageWrapper from '../PageWrapper';
+import Card from './Card'
 import styles from './portfolio.module.scss'
+import contact from '../../img/contact.jpg';
 import { NavLink } from 'react-router-dom';
 
 function Portfolio() {
     return (
     <PageWrapper>
-        <NavLink to='portfolio/contact-list'>
-            Contact List
-        </NavLink>
+        <div className={styles.portfolioList}>
+        <Card 
+            link="/portfolio/contact-list"
+            title='Contact list'
+            desc='App for add contacts'
+            image = {contact}
+        />
+        <Card 
+            link="/portfolio/todo-list"
+            title="Todo List"
+            desc='fdsfds'
+        />
+        </div>
     </PageWrapper>
     );
     }

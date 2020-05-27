@@ -1,10 +1,9 @@
 import React from 'react';
+import placeholder from '../../img/placeholder.png'
 
-function Avatar({className}) {
+function Avatar({avatarStyle, avatar = placeholder}) {
     return (
-        <div>
-            <img className={className} src="https://www.ludoviccareme.com/files/image_211_image_fr.jpg" alt="avatar"/>
-        </div>
+        <img className={avatarStyle} src={avatar} alt="avatar"/>
     );
 }
 

@@ -1,13 +1,19 @@
+@import '../../styles/vars.scss';
+
 .header {
-    height: 130px;
-    padding: 60px 0;
+    height: 80px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    a{
-        font-size: 25px;
+    background: $line-color;
+
+    .link {
+        padding: 10px 30px;
+        font-size: 150%;
         transition: transform ease 0.4s;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
         }
     }

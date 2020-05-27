@@ -1,16 +1,17 @@
 import React from 'react';
 import SocialIcons from './SocialIcons';
-import Avatar from './Avatar'
+import Avatar from './Avatar';
+import avatar from '../../img/unnamed.jpg'
 import styles from "./sidebar.module.scss"
+
 
 function Sidebar() {
 
     return (
-        <div className={styles.sidebar}>
-            <Avatar className={styles.avatar}/>
-
+        <aside className={styles.sidebar}>
+            <Avatar avatar={avatar} avatarStyle={styles.avatar}/>
             <SocialIcons />
-        </div>
+        </aside>
     );
 }
 

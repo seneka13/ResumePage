@@ -1,35 +1,14 @@
-.about-page{
-    display: flex;
-    justify-content: space-evenly;
+@import '../../styles/vars.scss';
+
+.title {
+    color: $txt-color;
+    margin-bottom: 20px;
 }
 
-.about-avatar {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    .about-title {
-        font-size: 20px;
-        color: rgb(194, 186, 186);
-        transform: translateX(20px);
-        transition: transform ease 0.5s;
-        margin: 30px 0px;
-        &:hover {
-            transform: translateX(100px);
-            transform: scale(1.2);
-        }
-    }
-    img {
-        width: 300px;
-        border-radius: 50%;
-    }
+.content {
+    padding: 40px;
 }
 
-.about-info{
-    width: 400px;
-    padding: 15px;
-    border: 1px solid rgba(188, 188, 197, 0.945);
-    border-radius: 10px;
-    .about-text{
-        color: rgb(204, 183, 183);
-    }
+.text {
+    color: $txt-color;
 }
