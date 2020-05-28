@@ -4,7 +4,7 @@ import styles from "./nav.module.scss"
 
 function Nav() {
 
-    const navItem = [
+    const navItems = [
         {id:1, class:'active-link', to:'/', text:'About'},
         {id:2, class:'active-link', to:'/contact', text:'Contact'},
         {id:3, class:'active-link', to:'/portfolio', text:'Portfolio'},
@@ -12,9 +12,9 @@ function Nav() {
     ]
 
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             {
-            navItem.map(item => ( 
+            navItems.map(item => ( 
                     <NavLink key={item.id}
                     className = {styles.link}
                     activeClassName={styles[item.class]} 
@@ -24,7 +24,7 @@ function Nav() {
                     </NavLink>
             ))
             }
-        </div>
+        </header>
     );
 }
 

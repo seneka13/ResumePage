@@ -8,10 +8,10 @@ function PageWrapper({children}) {
 return (
     <main className={styles.page}>
         <Sidebar />
-        <header className={styles.content}>
+        <div className={styles.content}>
         <Nav /> 
         {children} 
-        </header>
+        </div>
     </main>
 )
 }

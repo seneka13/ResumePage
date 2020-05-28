@@ -1,13 +1,13 @@
 import React from 'react';
 import PageWrapper from '../PageWrapper';
-import styles from './about.module.scss';
+import Development from '../Development';
 
 
 
 function About() {
     return (
         <PageWrapper>
-            
+            <Development/>
         </PageWrapper>
     );
     }

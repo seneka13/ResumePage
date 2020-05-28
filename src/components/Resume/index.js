@@ -1,11 +1,11 @@
 import React from 'react';
 import PageWrapper from '../PageWrapper'
-import style from './resume.module.scss'
+import Development from '../Development'
 
 function Resume() {
     return (
         <PageWrapper>
-            Resume
+            <Development/>
         </PageWrapper>
     );
     }

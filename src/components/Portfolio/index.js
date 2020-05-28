@@ -1,13 +1,14 @@
 import React from 'react';
 import PageWrapper from '../PageWrapper';
-import styles from './portfolio.module.scss'
-import { NavLink } from 'react-router-dom';
+import Development from '../Development'
+
 
 function Portfolio() {
     return (
     <PageWrapper>
+        <Development/>
     </PageWrapper>
-    );
+        );
     }
 
     export default Portfolio

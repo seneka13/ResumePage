@@ -12,6 +12,7 @@
         padding: 10px 30px;
         font-size: 150%;
         transition: transform ease 0.4s;
+        color: $txt-color;
 
         &:hover {
             transform: scale(1.2);
@@ -19,7 +20,7 @@
     }
 
     .active-link {
-        border-bottom: 2px solid #f9f9f9;
+        border-bottom: 2px solid $txt-color;
     }
 }
 

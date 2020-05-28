@@ -6,6 +6,7 @@ import Whatsapp from '../Icons/Whatsapp'
 import styles from "./sidebar.module.scss";
 
 function SocialIcons() {
+
     return (
         <div className={styles.social}>
             <a href="https://www.facebook.com/profile.php?id=100024608370678"
@@ -16,10 +17,18 @@ function SocialIcons() {
             <a href="https://github.com/seneka13" 
             target='_blank'
             rel="noopener noreferrer">
-            <Github  className={styles['social-icon']}/>
+                <Github  className={styles['social-icon']}/>
             </a>
-            <a href=""><Telegram className={styles['social-icon']}/></a>
-            <a href=""><Whatsapp  className={styles['social-icon']}/></a>
+            <a href="https://telegram.org//" 
+            target='_blank'
+            rel="noopener noreferrer">
+                <Telegram className={styles['social-icon']}/>
+            </a>
+            <a href="https://www.whatsapp.com/" 
+            target='_blank'
+            rel="noopener noreferrer">
+                <Whatsapp  className={styles['social-icon']}/>
+            </a>
         </div>
     );
 }
