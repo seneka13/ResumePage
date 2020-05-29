@@ -8,17 +8,25 @@ import styles from "./sidebar.module.scss";
 function SocialIcons() {
 
     const socialLink = [ 
-        {id: 1, social: <Facebook className={styles['social-icon']}/>, href:'https://www.facebook.com/profile.php?id=100024608370678'},
-        {id: 2, social: <Github className={styles['social-icon']}/>, href:'https://github.com/seneka13'},
-        {id: 3, social: <Telegram className={styles['social-icon']}/>, href:'https://telegram.org//'},
-        {id: 4, social: <Whatsapp className={styles['social-icon']}/>, href:'https://www.whatsapp.com/'}
+        {id: 1, social: Facebook, href:'https://www.facebook.com/profile.php?id=100024608370678'},
+        {id: 2, social: Github , href:'https://github.com/seneka13'},
+        {id: 3, social: Telegram , href:'https://telegram.org//'},
+        {id: 4, social: Whatsapp , href:'https://www.whatsapp.com/'}
     ]
 
     return (
         <div className={styles.social}>
-            {socialLink.map(item => (
-                <a key={item.id} href={item.href} target='_blank' rel="noreferrer noopener">{item.social}</a>
-            ))}
+            {socialLink.map(item => {
+                const Icon = item.social
+                return (
+                <a 
+                key={item.id} 
+                href={item.href} 
+                target='_blank' 
+                rel="noreferrer noopener">
+                <Icon className= {styles['social-icon']}/>
+                </a>)    
+            })}
         </div>
     );
 }
