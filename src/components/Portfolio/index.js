@@ -15,11 +15,6 @@ function Portfolio() {
             desc='App for create contacts'
             image = {contactList}
         />
-        <Card 
-            link="/portfolio/todo-list"
-            title="Todo List"
-            desc='Some desc'
-        />
         </div>
     </PageWrapper>
         );
