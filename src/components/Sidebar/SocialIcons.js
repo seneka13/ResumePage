@@ -7,7 +7,7 @@ import styles from "./sidebar.module.scss";
 
 function SocialIcons() {
 
-    const socialLinks = [ 
+    const socialLink = [ 
         {id: 1, social: Facebook, href:'https://www.facebook.com/profile.php?id=100024608370678'},
         {id: 2, social: Github , href:'https://github.com/seneka13'},
         {id: 3, social: Telegram , href:'https://telegram.org//'},
@@ -16,7 +16,7 @@ function SocialIcons() {
 
     return (
         <div className={styles.social}>
-            {socialLinks.map(item => {
+            {socialLink.map(item => {
                 const Icon = item.social
                 return (
                 <a 

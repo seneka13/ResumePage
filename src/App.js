@@ -6,9 +6,6 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
 import Resume from './components/Resume';
-import ContactList from './components/ContactList';
-import ContactInfo from './components/ContactList/ContactInfo';
-import NotFound from './components/NotFound'
 
 function App() {
   return (
@@ -18,10 +15,6 @@ function App() {
         <Route path="/resume" component={Resume} exact/>
         <Route path="/contact" component={Contact} exact/>
         <Route path="/portfolio" component={Portfolio} exact/>
-        <Route path="/portfolio/contact-list" component={ContactList} exact/>
-        <Route path="/portfolio/contact-list/:contactId" component={ContactInfo} exact/>
-
-        <Route component={NotFound} />
     </Switch>
     </BrowserRouter>
   );
