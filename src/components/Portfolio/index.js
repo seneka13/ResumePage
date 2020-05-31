@@ -1,12 +1,21 @@
 import React from 'react';
 import PageWrapper from '../PageWrapper';
-import Development from '../Development'
+import Card from './Card';
+import styles from './portfolio.module.scss';
+import contactList from '../../img/contact.jpg';
 
 
 function Portfolio() {
     return (
     <PageWrapper>
-        <Development/>
+        <div className={styles.portfolioList}>
+        <Card 
+            link="/portfolio/contact-list"
+            title='Contact list'
+            desc='App for create contacts'
+            image = {contactList}
+        />
+        </div>
     </PageWrapper>
         );
     }

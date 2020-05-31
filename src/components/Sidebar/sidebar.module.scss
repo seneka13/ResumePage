@@ -2,7 +2,7 @@
 
 .sidebar {
     width: 260px;
-    height: 100vh;
+    min-height: 100vh;
     background: $line-color;
     display: flex;
     flex-direction: column;
