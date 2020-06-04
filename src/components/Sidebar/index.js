@@ -10,11 +10,11 @@ import {NavLink} from 'react-router-dom';
 function Sidebar() {
 
     const navItems = [
-        {id:0, to:'/', text:'Home'},
-        {id:1, to:'/about', text:'About'},
-        {id:2, to:'/contact', text:'Contact'},
-        {id:3, to:'/portfolio', text:'Portfolio'},
-        {id:4, to:'/resume', text:'Resume'}
+        {id:0, to:'ResumePage/', text:'Home'},
+        {id:1, to:'ResumePage/about', text:'About'},
+        {id:2, to:'ResumePage/contact', text:'Contact'},
+        {id:3, to:'ResumePage/portfolio', text:'Portfolio'},
+        {id:4, to:'ResumePage/resume', text:'Resume'}
     ]
 
     return (
