@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
 import About from './components/About';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';
@@ -13,7 +14,8 @@ function App() {
   return (
     <BrowserRouter>
     <Switch>
-        <Route path="/" component={About} exact/>
+        <Route path="/" component={HomePage} exact/>
+        <Route path="/about" component={About} exact/>
         <Route path="/resume" component={Resume} exact/>
         <Route path="/contact" component={Contact} exact/>
         <Route path="/portfolio" component={Portfolio} exact/>
