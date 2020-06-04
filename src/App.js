@@ -14,13 +14,13 @@ function App() {
   return (
     <BrowserRouter>
     <Switch>
-        <Route path="/" component={HomePage} exact/>
-        <Route path="/about" component={About} exact/>
-        <Route path="/resume" component={Resume} exact/>
-        <Route path="/contact" component={Contact} exact/>
-        <Route path="/portfolio" component={Portfolio} exact/>
-        <Route path="/portfolio/contact-list" component={ContactList} exact/>
-        <Route path="/portfolio/contact-list/:contactId" component={ContactInfo} exact/>
+        <Route path="ResumePage/" component={HomePage} exact/>
+        <Route path="ResumePage/about" component={About} exact/>
+        <Route path="ResumePage/resume" component={Resume} exact/>
+        <Route path="ResumePage/contact" component={Contact} exact/>
+        <Route path="ResumePage/portfolio" component={Portfolio} exact/>
+        <Route path="ResumePage/portfolio/contact-list" component={ContactList} exact/>
+        <Route path="ResumePage/portfolio/contact-list/:contactId" component={ContactInfo} exact/>
     </Switch>
     </BrowserRouter>
   );
