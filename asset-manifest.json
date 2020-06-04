@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.b3719a9c.chunk.css",
-    "main.js": "/static/js/main.87200c75.chunk.js",
-    "main.js.map": "/static/js/main.87200c75.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e5b1187f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e5b1187f.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.98fec2c3.chunk.js": "/static/js/2.98fec2c3.chunk.js",
-    "static/js/2.98fec2c3.chunk.js.map": "/static/js/2.98fec2c3.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9dcc74ed4a79e9b2faca3fa423c79429.js": "/precache-manifest.9dcc74ed4a79e9b2faca3fa423c79429.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.b3719a9c.chunk.css.map": "/static/css/main.b3719a9c.chunk.css.map",
-    "static/js/2.98fec2c3.chunk.js.LICENSE.txt": "/static/js/2.98fec2c3.chunk.js.LICENSE.txt",
-    "static/media/homepage.module.scss": "/static/media/Samj.d130ad53.jpg",
-    "static/media/contact.jpg": "/static/media/contact.06471bc3.jpg",
-    "static/media/sam.jpg": "/static/media/sam.f5076e38.jpg"
+    "main.css": "/ResumePage/static/css/main.3f8a13eb.chunk.css",
+    "main.js": "/ResumePage/static/js/main.c9cd181e.chunk.js",
+    "main.js.map": "/ResumePage/static/js/main.c9cd181e.chunk.js.map",
+    "runtime-main.js": "/ResumePage/static/js/runtime-main.0cf3a515.js",
+    "runtime-main.js.map": "/ResumePage/static/js/runtime-main.0cf3a515.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/ResumePage/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.98fec2c3.chunk.js": "/ResumePage/static/js/2.98fec2c3.chunk.js",
+    "static/js/2.98fec2c3.chunk.js.map": "/ResumePage/static/js/2.98fec2c3.chunk.js.map",
+    "index.html": "/ResumePage/index.html",
+    "precache-manifest.18a2deec5839fd39da8f8bfd6f089b1f.js": "/ResumePage/precache-manifest.18a2deec5839fd39da8f8bfd6f089b1f.js",
+    "service-worker.js": "/ResumePage/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/ResumePage/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.3f8a13eb.chunk.css.map": "/ResumePage/static/css/main.3f8a13eb.chunk.css.map",
+    "static/js/2.98fec2c3.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.98fec2c3.chunk.js.LICENSE.txt",
+    "static/media/homepage.module.scss": "/ResumePage/static/media/Samj.d130ad53.jpg",
+    "static/media/contact.jpg": "/ResumePage/static/media/contact.06471bc3.jpg",
+    "static/media/sam.jpg": "/ResumePage/static/media/sam.f5076e38.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e5b1187f.js",
+    "static/js/runtime-main.0cf3a515.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.98fec2c3.chunk.js",
-    "static/css/main.b3719a9c.chunk.css",
-    "static/js/main.87200c75.chunk.js"
+    "static/css/main.3f8a13eb.chunk.css",
+    "static/js/main.c9cd181e.chunk.js"
   ]
 }
