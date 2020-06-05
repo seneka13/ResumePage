@@ -12,7 +12,7 @@ import ContactInfo from './components/ContactList/ContactInfo';
 
 function App() {
   return (
-    <BrowserRouter basename ='/ResumePage'>
+    <BrowserRouter basename ="/ResumePage">
     <Switch>
         <Route path="/" component={HomePage} exact/>
         <Route path="/about" component={About} exact/>
