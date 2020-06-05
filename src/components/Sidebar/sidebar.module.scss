@@ -16,11 +16,11 @@
     object-fit: cover;
     border-radius: 10%;
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .name{
-    font-size: 30px;
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (20 - 10) + 16px);
     font-weight: bold;
     color: $txt-color;
     margin-bottom: 50px;
@@ -55,6 +55,11 @@
 .link {
     transition: transform ease 0.4s;
     &:hover{
-        transform: translateX(20px);
+        transform: translateX(10px);
     }
+}
+
+.active{
+    color:$uppercase;
+    transform: translateX(10px);
 }

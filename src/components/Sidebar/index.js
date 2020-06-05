@@ -20,13 +20,15 @@ function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <Avatar avatar={avatar} avatarStyle={styles.avatar}/>
-            <div className={styles.name}><span className={styles.upper}>S</span>amat <span className={styles.upper}>M</span>usaev</div>
+            <div className={styles.name}>
+                <span className={styles.upper}>S</span>amat
+                <span className={styles.upper}> M</span>usaev</div>
             {navItems.map(item => ( 
-                <div className={styles.nav}>
+                <div key={item.id} className={styles.nav}>
                     <div className={styles.link}>
-                        <NavLink key={item.id}
+                        <NavLink 
                         className = {styles.link}
-                        activeClassName={styles['active-link']} 
+                        activeClassName={styles.active}
                         exact 
                         to={item.to}>
                         {item.text}
