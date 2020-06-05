@@ -20,7 +20,7 @@ function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <Avatar avatar={avatar} avatarStyle={styles.avatar}/>
-            <div className={styles.name}>Sam <span className={styles.upper}>M.</span></div>
+            <div className={styles.name}><span className={styles.upper}>S</span>amat <span className={styles.upper}>M</span>usaev</div>
             {navItems.map(item => ( 
                 <div className={styles.nav}>
                     <div className={styles.link}>
