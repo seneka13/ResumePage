@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/ResumePage/static/css/main.3f8a13eb.chunk.css",
-    "main.js": "/ResumePage/static/js/main.6867889a.chunk.js",
-    "main.js.map": "/ResumePage/static/js/main.6867889a.chunk.js.map",
+    "main.css": "/ResumePage/static/css/main.ed54ca1b.chunk.css",
+    "main.js": "/ResumePage/static/js/main.ef2d46a1.chunk.js",
+    "main.js.map": "/ResumePage/static/js/main.ef2d46a1.chunk.js.map",
     "runtime-main.js": "/ResumePage/static/js/runtime-main.0cf3a515.js",
     "runtime-main.js.map": "/ResumePage/static/js/runtime-main.0cf3a515.js.map",
-    "static/css/2.af3c1da9.chunk.css": "/ResumePage/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.98fec2c3.chunk.js": "/ResumePage/static/js/2.98fec2c3.chunk.js",
-    "static/js/2.98fec2c3.chunk.js.map": "/ResumePage/static/js/2.98fec2c3.chunk.js.map",
+    "static/css/2.42836a8c.chunk.css": "/ResumePage/static/css/2.42836a8c.chunk.css",
+    "static/js/2.121b2584.chunk.js": "/ResumePage/static/js/2.121b2584.chunk.js",
+    "static/js/2.121b2584.chunk.js.map": "/ResumePage/static/js/2.121b2584.chunk.js.map",
     "index.html": "/ResumePage/index.html",
-    "precache-manifest.b515208d2c4bbfa5ef625ff88fe4b4bc.js": "/ResumePage/precache-manifest.b515208d2c4bbfa5ef625ff88fe4b4bc.js",
+    "precache-manifest.0b54ef0de68b9ed400313aa176f8f8f1.js": "/ResumePage/precache-manifest.0b54ef0de68b9ed400313aa176f8f8f1.js",
     "service-worker.js": "/ResumePage/service-worker.js",
-    "static/css/2.af3c1da9.chunk.css.map": "/ResumePage/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.3f8a13eb.chunk.css.map": "/ResumePage/static/css/main.3f8a13eb.chunk.css.map",
-    "static/js/2.98fec2c3.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.98fec2c3.chunk.js.LICENSE.txt",
+    "static/css/2.42836a8c.chunk.css.map": "/ResumePage/static/css/2.42836a8c.chunk.css.map",
+    "static/css/main.ed54ca1b.chunk.css.map": "/ResumePage/static/css/main.ed54ca1b.chunk.css.map",
+    "static/js/2.121b2584.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.121b2584.chunk.js.LICENSE.txt",
     "static/media/homepage.module.scss": "/ResumePage/static/media/Samj.d130ad53.jpg",
     "static/media/contact.jpg": "/ResumePage/static/media/contact.06471bc3.jpg",
     "static/media/sam.jpg": "/ResumePage/static/media/sam.f5076e38.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0cf3a515.js",
-    "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.98fec2c3.chunk.js",
-    "static/css/main.3f8a13eb.chunk.css",
-    "static/js/main.6867889a.chunk.js"
+    "static/css/2.42836a8c.chunk.css",
+    "static/js/2.121b2584.chunk.js",
+    "static/css/main.ed54ca1b.chunk.css",
+    "static/js/main.ef2d46a1.chunk.js"
   ]
 }
