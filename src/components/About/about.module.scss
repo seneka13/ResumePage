@@ -1,11 +1,44 @@
 @import '../../styles/vars.scss';
 
-.circle{
-    width: 80%;
+.aboutInfo {
+    padding: 40px;
+    color: $txt-color;
 }
 
-.skillBar{
+.skillTitle{
+    color: $uppercase;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.iconLine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before, &:after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+    }
+}
+
+.icon {
+    margin: 0px 5px;
+    color: $uppercase;
+    width: 20px;
+    height: 20px;
+}
+
+.skillBar {
     color: $txt-color;
     text-align: center;
     padding: 20px;
+    width: 130px;
+}
+
+.prog {
+    color: $txt-color;
+    padding-top: 10px;
+    font-size: 16px;
 }

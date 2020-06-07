@@ -32,7 +32,7 @@
 
 .social {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70%;
     margin-top: 50px;
 }
@@ -48,18 +48,56 @@
 .nav{
     border-bottom: 1px solid $border-color;
     width: 100%;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 20px 10px 20px;
     color: $txt-color;
+    transition: opacity ease 2s;
 }
 
 .link {
-    transition: transform ease 0.4s;
-    &:hover{
-        transform: translateX(10px);
+    transition: opacity ease 2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    &:hover {
+        color: $uppercase;
+    }
+    & + .navIcon {
+        opacity: 0;
     }
 }
 
-.active{
-    color:$uppercase;
-    transform: translateX(10px);
+.active {
+    transition: opacity ease 2s;
+    & + .navIcon {
+        animation: link 1s ease;
+        opacity: 1;
+    }
+    &::after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+        margin-left: 10px;
+    }
+}
+
+@keyframes link{
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.navIcon {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    color: $uppercase;
+    transition: opacity ease 2s;
 }
