@@ -1,0 +1,22 @@
+@import '../../styles/vars.scss';
+
+.burgerMenu {
+    transition: transform ease 1s, box-shadow ease 1s;;
+    transform: translateX(-260px);
+    position: fixed;
+    z-index: 200;
+}
+
+.burgerActive {
+    transition: transform ease 1s, box-shadow ease 1s;
+    transform: translateX(0px);
+    position: fixed;
+    z-index: 200;
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.7);
+}
+
+.burgerBtn {
+    position: absolute;
+    top: -15px;
+    left: 240px;
+}

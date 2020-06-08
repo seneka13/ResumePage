@@ -13,7 +13,7 @@ function SocialIcons() {
         {id: 2, social: Github , href:'https://github.com/seneka13'},
         {id: 3, social: Telegram , href:'https://telegram.org//'},
         {id: 4, social: Whatsapp , href:'https://www.whatsapp.com/'},
-        {id: 4, social: Linkedin , href:'https://www.linkedin.com/feed/?trk=404_page'}
+        {id: 5, social: Linkedin , href:'https://www.linkedin.com/feed/?trk=404_page'}
     ]
 
     return (

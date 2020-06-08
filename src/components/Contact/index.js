@@ -1,6 +1,6 @@
 import React from 'react';
 import PageWrapper from '../PageWrapper';
-import Development from '../Development'
+import Development from '../Development';
 
 
 function Contact(props) {
