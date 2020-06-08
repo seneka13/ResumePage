@@ -1,14 +1,14 @@
 @import '../../styles/vars.scss';
 
 .burgerMenu {
-    transition: transform ease 1s, box-shadow ease 1s;;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
     transform: translateX(-260px);
     position: fixed;
     z-index: 200;
 }
 
 .burgerActive {
-    transition: transform ease 1s, box-shadow ease 1s;
+    transition: transform ease 0.5s, box-shadow ease 0.5s;
     transform: translateX(0px);
     position: fixed;
     z-index: 200;

@@ -54,7 +54,7 @@
 }
 
 .link {
-    transition: opacity ease 2s;
+    transition: opacity ease 0.5s;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,9 +68,9 @@
 }
 
 .active {
-    transition: opacity ease 2s;
+    transition: opacity ease 0.5s;
     & + .navIcon {
-        animation: link 1s ease;
+        animation: link 0.5s ease;
         opacity: 1;
     }
     &::after {
@@ -99,5 +99,4 @@
     width: 22px;
     height: 22px;
     color: $uppercase;
-    transition: opacity ease 2s;
 }

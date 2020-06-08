@@ -5,7 +5,6 @@ import BurgerBtn from './BurgerBtn'
 import {connect} from 'react-redux';
 
 function BurgerMenu({status}) {
-
     const toggleClass = status ? styles.burgerActive : styles.burgerMenu
     return (
         <div className={toggleClass}>
