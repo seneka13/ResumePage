@@ -82,6 +82,13 @@
     }
 }
 
+.navIcon {
+    margin-left: 20px;
+    width: 22px;
+    height: 22px;
+    color: $uppercase;
+}
+
 @keyframes link{
     from{
         opacity: 0;
@@ -92,11 +99,4 @@
         opacity: 1;
         transform: translateX(0px);
     }
-}
-
-.navIcon {
-    margin-left: 20px;
-    width: 22px;
-    height: 22px;
-    color: $uppercase;
 }
