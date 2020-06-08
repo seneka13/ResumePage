@@ -1,37 +1,38 @@
 @import '../../styles/vars.scss';
 
 .home {
-    background: linear-gradient(70deg,rgba(17, 17, 17, 0) 15%, #11110c 85%), 
-    linear-gradient(220deg,rgba(17, 17, 17, 0) 20%, #161613ea 80%),
-    url('../../img/Samj.jpg') center / cover fixed;
+    background: linear-gradient(70deg, rgba(17, 17, 17, 0) 15%, #11110c 85%),
+        linear-gradient(220deg, rgba(17, 17, 17, 0) 20%, #161613ea 80%),
+        url('../../img/Samj.jpg') center / cover fixed;
     width: 100%;
     min-height: 100vh;
     color: $txt-color;
     padding: 100px 0px 0px 80px;
 }
 
-.name{
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (40 - 10) + 20px);
+.name {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (40 - 10) + 20px);
     animation: title 1.8s ease;
 }
 
 .title {
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (60 - 10) + 40px);
+    font-size: calc((100vw - 480px)/(1280 - 480) * (60 - 10) + 40px);
     font-weight: bold;
     animation: title 1.8s ease;
     transform: translateY(0px);
 }
-.uppercase{
+
+.uppercase {
     color: $uppercase;
 }
 
-@keyframes title{
-    from{
+@keyframes title {
+    from {
         opacity: 0;
         transform: translateY(100px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateY(0px);
     }

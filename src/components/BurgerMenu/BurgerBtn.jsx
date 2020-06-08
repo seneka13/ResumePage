@@ -1,33 +1,39 @@
 import React from 'react'
-import Burger from 'react-css-burger';
-import styles from "./burger.module.scss"
+import Burger from 'react-css-burger'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import styles from './burger.module.scss'
 import { toggleMenu } from '../../store/action'
-import {connect} from 'react-redux';
 
-function BurgerBtn ({status, toggle}) {
-    return (
-        <div className={styles.burgerBtn}>
-        <Burger
+function BurgerBtn({ status, toggle }) {
+  return (
+    <div className={styles.burgerBtn}>
+      <Burger
         onClick={() => toggle(!status)}
         active={status}
         burger="arrowturn"
         color="#dc9624"
         hoverOpacity={0.6}
         scale={0.6}
-        style={{outline:'none'}}
-        />
-        </div>
-    );
+        style={{ outline: 'none' }}
+      />
+    </div>
+  )
+}
+
+BurgerBtn.propTypes = {
+  status: PropTypes.bool,
+  toggle: PropTypes.func,
 }
 
 
 const MapStateToProps = (state) => ({
-    status: state.status,
+  status: state.status,
 })
 
 const MapDispatchToProps = (dispatch) => ({
-    toggle: (status) => dispatch(toggleMenu(status)),
+  toggle: (status) => dispatch(toggleMenu(status)),
 })
 
 
-export default connect(MapStateToProps, MapDispatchToProps) (BurgerBtn)
+export default connect(MapStateToProps, MapDispatchToProps)(BurgerBtn)

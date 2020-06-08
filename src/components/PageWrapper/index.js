@@ -1,21 +1,21 @@
 import React from 'react'
-import BurgerMenu from '../BurgerMenu'
 import PropTypes from 'prop-types'
+import BurgerMenu from '../BurgerMenu'
 import styles from './page.module.scss'
 
-function PageWrapper({children}) {
-return (
+function PageWrapper({ children }) {
+  return (
     <main className={styles.page}>
-        <BurgerMenu />
-        <div className={styles.content}>
-        {children} 
-        </div>
+      <BurgerMenu />
+      <div className={styles.content}>
+        {children}
+      </div>
     </main>
-)
+  )
 }
 
 PageWrapper.propTypes = {
-    children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default PageWrapper

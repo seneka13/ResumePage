@@ -1,26 +1,26 @@
-import React from 'react';
-import PageWrapper from '../PageWrapper';
-import Card from './Card';
-import styles from './portfolio.module.scss';
-import contactList from '../../img/contact.jpg';
-import {Container} from 'react-bootstrap'
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import PageWrapper from '../PageWrapper'
+import Card from './Card'
+import styles from './portfolio.module.scss'
+import contactList from '../../img/contact.jpg'
 
 
 function Portfolio() {
-    return (
+  return (
     <PageWrapper>
-        <Container>
+      <Container>
         <div className={styles.portfolioList}>
-        <Card 
+          <Card
             link="/portfolio/contact-list"
-            title='Contact list'
-            desc='App for create contacts'
-            image = {contactList}
-        />
+            title="Contact list"
+            desc="App for create contacts"
+            image={contactList}
+          />
         </div>
-        </Container>
+      </Container>
     </PageWrapper>
-        );
-    }
+  )
+}
 
-    export default Portfolio
+export default Portfolio

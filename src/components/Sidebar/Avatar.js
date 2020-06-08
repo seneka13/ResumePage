@@ -1,16 +1,17 @@
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 import placeholder from '../../img/placeholder.png'
 
-function Avatar({avatarStyle, avatar = placeholder}) {
-    return (
-        <img className={avatarStyle} src={avatar} alt="avatar"/>
-    );
+function Avatar({ avatarStyle, avatar = placeholder }) {
+  return (
+    <img className={avatarStyle} src={avatar} alt="avatar" />
+  )
 }
 
 
 Avatar.propTypes = {
-    avatar: PropTypes.string
+  avatar: PropTypes.string,
+  avatarStyle: PropTypes.string,
 }
 
-    export default Avatar
+export default Avatar

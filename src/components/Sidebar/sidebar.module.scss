@@ -19,14 +19,14 @@
     margin-top: 30px;
 }
 
-.name{
-    font-size: calc( (100vw - 480px)/(1280 - 480) * (20 - 10) + 16px);
+.name {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (20 - 10) + 16px);
     font-weight: bold;
     color: $txt-color;
     margin-bottom: 50px;
 }
 
-.upper{
+.upper {
     color: $uppercase;
 }
 
@@ -37,15 +37,16 @@
     margin-top: 80px;
 }
 
-.social-icon{
+.social-icon {
     color: $txt-color;
+
     &:hover {
         color: $uppercase;
         cursor: pointer;
     }
 }
 
-.nav{
+.nav {
     border-bottom: 1px solid $border-color;
     width: 100%;
     padding: 10px 20px 10px 20px;
@@ -59,20 +60,24 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
+
     &:hover {
         color: $uppercase;
     }
-    & + .navIcon {
+
+    &+.navIcon {
         opacity: 0;
     }
 }
 
 .active {
     transition: opacity ease 0.5s;
-    & + .navIcon {
+
+    &+.navIcon {
         animation: link 0.5s ease;
         opacity: 1;
     }
+
     &::after {
         content: "";
         width: 40px;
@@ -89,13 +94,13 @@
     color: $uppercase;
 }
 
-@keyframes link{
-    from{
+@keyframes link {
+    from {
         opacity: 0;
         transform: translateX(-20px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translateX(0px);
     }

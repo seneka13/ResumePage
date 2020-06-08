@@ -1,14 +1,14 @@
-import React from 'react';
-import PageWrapper from '../PageWrapper';
-import Development from '../Development';
+import React from 'react'
+import PageWrapper from '../PageWrapper'
+import Development from '../Development'
 
 
-function Contact(props) {
-    return (
+function Contact() {
+  return (
     <PageWrapper>
-        <Development/>
+      <Development />
     </PageWrapper>
-    );
-    }
+  )
+}
 
-    export default Contact
+export default Contact

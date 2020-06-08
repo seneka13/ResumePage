@@ -12,9 +12,11 @@
     text-decoration: none;
     color: $txt-color;
     transition: transform ease 0.4s;
-    &:hover{
+
+    &:hover {
         transform: scale(1.09);
     }
+
     margin: 20px;
 }
 
