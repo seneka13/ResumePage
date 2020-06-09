@@ -15,3 +15,5 @@
 [0603/162058.052:ERROR:process_info.cc(359)] UncheckedAllocate
 [0603/163543.784:ERROR:process_info.cc(359)] UncheckedAllocate
 [0603/163645.070:ERROR:process_info.cc(359)] UncheckedAllocate
+[0609/172013.243:ERROR:process_info.cc(359)] UncheckedAllocate
+[0609/172013.370:ERROR:process_info.cc(359)] UncheckedAllocate
