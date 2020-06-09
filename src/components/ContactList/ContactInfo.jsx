@@ -4,8 +4,10 @@ import style from './contactlist.module.scss'
 
 import PageWapper from '../PageWrapper'
 
-function ContactInfo({ props }) {
-  const { name, phone, address, imgSrc} = props.location.state.contact
+function ContactInfo(props) {
+  console.log(props)
+
+  const { imgSrc, name, phone, address, desc } = props.location.state.contact
   return (
     <PageWapper>
       <div className={style.contactInfo}>
@@ -15,7 +17,7 @@ function ContactInfo({ props }) {
           <div>{phone}</div>
           <div>{address}</div>
           <div className={style.contactText}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ut sapiente qui adipisci tempore, neque numquam vitae natus facere reiciendis officiis earum provident praesentium veniam facilis illo dicta saepe in!Nemo excepturi temporibus, velit possimus, ducimus fugiat debitis nihil, pariatur suscipit dignissimos explicabo. Corporis asperiores, numquam porro eaque, ratione veniam ad fugit repellendus voluptas, architecto nesciunt velit consequatur ex nihil?
+            {desc}
           </div>
         </div>
       </div>
@@ -24,11 +26,12 @@ function ContactInfo({ props }) {
 }
 
 ContactInfo.propTypes = {
-  contact: PropTypes.node,
+  contact: PropTypes.object,
   name: PropTypes.string,
   phone: PropTypes.string,
   address: PropTypes.string,
   imgSrc: PropTypes.string,
+  desc: PropTypes.string,
 }
 
 export default ContactInfo
