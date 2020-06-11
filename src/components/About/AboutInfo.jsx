@@ -1,19 +1,20 @@
 import React from 'react'
+import { Row, Col } from 'react-bootstrap'
+import portrait from '../../img/portrait.jpg'
+import styles from './about.module.scss'
 
 
 function AboutInfo() {
   return (
-    <div>
-      <h1>ФИО</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Vitae amet ullam minima? Itaque sed ad labore fuga modi
-        accusantium eaque tenetur, sint, eum nemo non quis ducimus
-        rem hic illo!Temporibus ab sint quis deleniti explicabo
-        similique earum facilis? Expedita, nulla reprehenderit iure
-        ullam accusamus reiciendis adipisci laboriosam sit corporis
-        eaque? Dolorum commodi perspiciatis esse eveniet deleniti laudantium fugiat quae.
-
-      </p>
+    <div className={`${styles.aboutInfo} mb-5 mt-5`}>
+      <Row>
+        <Col xs={12} md={6}>
+          <img src={portrait} alt="portrait" />
+        </Col>
+        <Col xs={12} md={6}>
+          <h3>Hello! i am Samat</h3>
+        </Col>
+      </Row>
     </div>
   )
 }

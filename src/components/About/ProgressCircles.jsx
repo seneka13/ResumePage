@@ -25,7 +25,7 @@ function ProgressCircles() {
       {
                 skills.map((skill) => (
                   <Col key={skill.progName} xs={6} md={2}>
-                    <div className={style.skillBar}>
+                    <div className={`${style.skillBar} mt-5`}>
                       <ProgressProvider valueStart={0} valueEnd={skill.level}>
                         {(value) => (
                           <CircularProgressbar

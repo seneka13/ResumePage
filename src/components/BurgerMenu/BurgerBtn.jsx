@@ -2,10 +2,17 @@ import React from 'react'
 import Burger from 'react-css-burger'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+
 import styles from './burger.module.scss'
 import { toggleMenu } from '../../store/action'
 
 function BurgerBtn({ status, toggle }) {
+  const window = document.body
+
+  window.addEventListener('dblclick', () => {
+    toggle(false)
+  })
+
   return (
     <div className={styles.burgerBtn}>
       <Burger
@@ -28,7 +35,7 @@ BurgerBtn.propTypes = {
 
 
 const MapStateToProps = (state) => ({
-  status: state.status,
+  status: state.toggle.status,
 })
 
 const MapDispatchToProps = (dispatch) => ({

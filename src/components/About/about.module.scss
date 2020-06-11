@@ -2,19 +2,31 @@
 
 .aboutInfo {
     color: $txt-color;
+    width: 100%;
+    background-color: $side-color;
+    padding: 20px;
+    border: 2px solid $border-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
-.title{
+.aboutInfo img {
+    width: 100%;
+    border: 5px solid $border-color-2;
+}
+
+.title {
     color: $uppercase;
     text-transform: uppercase;
     text-align: center;
 }
 
-.iconLine{
+.iconLine {
     display: flex;
     justify-content: center;
     align-items: center;
-    &:before, &:after {
+
+    &:before,
+    &:after {
         content: "";
         width: 40px;
         height: 1px;

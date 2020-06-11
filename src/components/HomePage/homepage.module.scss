@@ -1,13 +1,14 @@
 @import '../../styles/vars.scss';
 
 .home {
-    background: linear-gradient(70deg, rgba(17, 17, 17, 0) 15%, #11110c 85%),
-        linear-gradient(220deg, rgba(17, 17, 17, 0) 20%, #161613ea 80%),
-        url('../../img/Samj.jpg') center / cover fixed;
+    background: 
+    linear-gradient(70deg, rgba(17, 17, 17, 0) 15%, #11110c 85%),
+    linear-gradient(220deg, rgba(17, 17, 17, 0) 20%, #161613ea 80%),
+    url('../../img/Samj.jpg') center / cover fixed;
     width: 100%;
     min-height: 100vh;
     color: $txt-color;
-    padding: 100px 0px 0px 80px;
+    padding-top: 100px;
 }
 
 .name {

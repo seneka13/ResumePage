@@ -20,7 +20,7 @@ BurgerMenu.propTypes = {
 }
 
 const mapStateToProps = (state) => ({
-  status: state.status,
+  status: state.toggle.status,
 })
 
 export default connect(mapStateToProps)(BurgerMenu)
