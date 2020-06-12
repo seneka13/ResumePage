@@ -1,10 +1,12 @@
 import React from 'react'
 import shortid from 'shortid'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { addContact } from '../../store/action'
 import style from './contactlist.module.scss'
 
 
-function ContactForm({ saveData }) {
+function ContactForm({ form, contact }) {
   const initialState = {
     id: '',
     photo: '',
@@ -49,7 +51,7 @@ function ContactForm({ saveData }) {
       imgSrc: photo,
     }
 
-    saveData(newContact)
+    form([...contact, newContact])
     dispatch({ type: 'CLEAR_FIELDS' })
   }
 
@@ -72,7 +74,7 @@ function ContactForm({ saveData }) {
 
           <input type="text" value={address} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'address', fieldValue: e.target.value })} placeholder="Address" />
         </label>
-        <textarea name="desc" id="desc" cols="21" rows="5" onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'desc', fieldValue: e.target.value })} placeholder="Description"></textarea>
+        <textarea name="desc" id="desc" onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'desc', fieldValue: e.target.value })} placeholder="Description" />
       </form>
       <button type="button" className={style.formBtn} onClick={createContact}>Создать контакт</button>
     </div>
@@ -80,8 +82,19 @@ function ContactForm({ saveData }) {
 }
 
 ContactForm.propTypes = {
-  saveData: PropTypes.func,
+  form: PropTypes.func,
+  contact: PropTypes.array,
 }
 
 
-export default ContactForm
+const MapStateToProps = (state) => ({
+  contact: state.form.contact,
+})
+
+
+const MapDispatchToProps = (dispatch) => ({
+  form: (contact) => dispatch(addContact(contact)),
+})
+
+
+export default connect(MapStateToProps, MapDispatchToProps)(ContactForm)

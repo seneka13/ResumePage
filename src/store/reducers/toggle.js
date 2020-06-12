@@ -9,11 +9,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         status: action.status,
       }
-    case 'ADD_CONTACT':
-      return {
-        ...state,
-        contact: action.contact,
-      }
     default:
       return state
   }
