@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/ResumePage/static/css/main.ed54ca1b.chunk.css",
-    "main.js": "/ResumePage/static/js/main.ef2d46a1.chunk.js",
-    "main.js.map": "/ResumePage/static/js/main.ef2d46a1.chunk.js.map",
-    "runtime-main.js": "/ResumePage/static/js/runtime-main.0cf3a515.js",
-    "runtime-main.js.map": "/ResumePage/static/js/runtime-main.0cf3a515.js.map",
+    "main.css": "/ResumePage/static/css/main.f3ec4b01.chunk.css",
+    "main.js": "/ResumePage/static/js/main.6ee9d5ce.chunk.js",
+    "main.js.map": "/ResumePage/static/js/main.6ee9d5ce.chunk.js.map",
+    "runtime-main.js": "/ResumePage/static/js/runtime-main.ad3477bb.js",
+    "runtime-main.js.map": "/ResumePage/static/js/runtime-main.ad3477bb.js.map",
     "static/css/2.42836a8c.chunk.css": "/ResumePage/static/css/2.42836a8c.chunk.css",
-    "static/js/2.121b2584.chunk.js": "/ResumePage/static/js/2.121b2584.chunk.js",
-    "static/js/2.121b2584.chunk.js.map": "/ResumePage/static/js/2.121b2584.chunk.js.map",
+    "static/js/2.050d858a.chunk.js": "/ResumePage/static/js/2.050d858a.chunk.js",
+    "static/js/2.050d858a.chunk.js.map": "/ResumePage/static/js/2.050d858a.chunk.js.map",
     "index.html": "/ResumePage/index.html",
-    "precache-manifest.0b54ef0de68b9ed400313aa176f8f8f1.js": "/ResumePage/precache-manifest.0b54ef0de68b9ed400313aa176f8f8f1.js",
+    "precache-manifest.8dce1ca582f6609fd668e75b1ac4cdfd.js": "/ResumePage/precache-manifest.8dce1ca582f6609fd668e75b1ac4cdfd.js",
     "service-worker.js": "/ResumePage/service-worker.js",
     "static/css/2.42836a8c.chunk.css.map": "/ResumePage/static/css/2.42836a8c.chunk.css.map",
-    "static/css/main.ed54ca1b.chunk.css.map": "/ResumePage/static/css/main.ed54ca1b.chunk.css.map",
-    "static/js/2.121b2584.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.121b2584.chunk.js.LICENSE.txt",
+    "static/css/main.f3ec4b01.chunk.css.map": "/ResumePage/static/css/main.f3ec4b01.chunk.css.map",
+    "static/js/2.050d858a.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.050d858a.chunk.js.LICENSE.txt",
     "static/media/homepage.module.scss": "/ResumePage/static/media/Samj.d130ad53.jpg",
     "static/media/contact.jpg": "/ResumePage/static/media/contact.06471bc3.jpg",
-    "static/media/sam.jpg": "/ResumePage/static/media/sam.f5076e38.jpg"
+    "static/media/portrait.png": "/ResumePage/static/media/portrait.d4fb92ac.png",
+    "static/media/sam.jpg": "/ResumePage/static/media/sam.620de2cd.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0cf3a515.js",
+    "static/js/runtime-main.ad3477bb.js",
     "static/css/2.42836a8c.chunk.css",
-    "static/js/2.121b2584.chunk.js",
-    "static/css/main.ed54ca1b.chunk.css",
-    "static/js/main.ef2d46a1.chunk.js"
+    "static/js/2.050d858a.chunk.js",
+    "static/css/main.f3ec4b01.chunk.css",
+    "static/js/main.6ee9d5ce.chunk.js"
   ]
 }
