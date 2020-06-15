@@ -10,11 +10,11 @@ import ResumeIcon from '../Icons/ResumeIcon'
 
 function Nav() {
   const navItems = [
-    { id: 0, to: '/', text: 'Home', icon: HomeIcon },
-    { id: 1, to: '/about', text: 'About', icon: AboutIcon },
-    { id: 2, to: '/contact', text: 'Contact', icon: ContactIcon },
-    { id: 3, to: '/portfolio', text: 'Portfolio', icon: PortfolioIcon },
-    { id: 4, to: '/resume', text: 'Resume', icon: ResumeIcon },
+    { id: 0, to: '/', text: 'Главная', icon: HomeIcon },
+    { id: 1, to: '/about', text: 'Обо мне', icon: AboutIcon },
+    { id: 2, to: '/contact', text: 'Контакты', icon: ContactIcon },
+    { id: 3, to: '/portfolio', text: 'Портфолио', icon: PortfolioIcon },
+    { id: 4, to: '/resume', text: 'Резюме', icon: ResumeIcon },
   ]
 
   return (

@@ -5,8 +5,8 @@ import styles from './sidebar.module.scss'
 function Name() {
   return (
     <div className={styles.name}>
-      <span className={styles.upper}>S</span>amat
-      <span className={styles.upper}> M</span>usaev
+      <span className={styles.upper}>С</span>амат
+      <span className={styles.upper}> М</span>усаев
     </div>
   )
 }

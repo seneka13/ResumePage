@@ -15,12 +15,12 @@ function About() {
         <div className={style.iconLine}>
           <AboutIcon className={style.icon} />
         </div>
-        <h2 className={style.title}>About me</h2>
+        <h2 className={style.title}>Обо мне</h2>
         <AboutInfo />
         <div className={style.iconLine}>
           <SkillsIcon className={style.icon} />
         </div>
-        <h2 className={style.title}>My skills</h2>
+        <h2 className={style.title}>Мои навыки</h2>
         <ProgressCircles />
       </Container>
     </PageWrapper>

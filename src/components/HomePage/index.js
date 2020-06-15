@@ -8,12 +8,12 @@ function Development() {
     <PageWrapper>
       <div className={styles.home}>
         <Container>
-          <h3 className={styles.name}>Hey, i`m Sam</h3>
+          <h3 className={styles.name}>Привет, я</h3>
           <h1 className={styles.title}>
             <span className={styles.uppercase}>
               F
             </span>ront End <br />
-            <span className={styles.uppercase}>Developer.</span>
+            <span className={styles.uppercase}>Разработчик.</span>
           </h1>
         </Container>
       </div>
