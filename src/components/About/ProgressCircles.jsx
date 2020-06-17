@@ -11,20 +11,20 @@ function ProgressCircles() {
     { progName: 'CSS3', level: '88' },
     { progName: 'JavaScript', level: '79' },
     { progName: 'JQuery', level: '67' },
-    { progName: 'ReactJS', level: '74' },
+    { progName: 'ReactJS', level: '69' },
     { progName: 'Sass/Scss', level: '85' },
     { progName: 'Redux', level: '62' },
     { progName: 'Bootstrap', level: '73' },
     { progName: 'Webpack', level: '61' },
     { progName: 'Babel', level: '60' },
-    { progName: 'npm', level: '72' },
+    { progName: 'npm', level: '62' },
     { progName: 'BEM', level: '87' },
   ]
   return (
     <Row>
       {
                 skills.map((skill) => (
-                  <Col key={skill.progName} xs={6} md={2}>
+                  <Col key={skill.progName} xs={4} md={2}>
                     <div className={`${style.skillBar} mt-5`}>
                       <ProgressProvider valueStart={0} valueEnd={skill.level}>
                         {(value) => (

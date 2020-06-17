@@ -8,10 +8,10 @@ function AboutInfo() {
   return (
     <div className={`${styles.aboutInfo} mb-5 mt-5`}>
       <Row>
-        <Col xs={12} md={3}>
+        <Col xs={12} md={6} lg={3}>
           <img src={portrait} alt="portrait" />
         </Col>
-        <Col xs={12} md={9}>
+        <Col xs={12} md={6} lg={9}>
           <h3 className={styles.aboutTitle}><span>П</span>ривет , меня зовут Самат</h3>
           <p className={styles.aboutText}>Мне 27 лет. На данный момент я работаю главным юристом в Министерстве экономики Кыргызской Республики. <br />
             Опыт web-разработки более 1 года. Владею HTML5/CSS3/JavaScript(ReactJS, Redux). <br />

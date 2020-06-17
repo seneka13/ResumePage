@@ -18,7 +18,7 @@ function BurgerBtn({ status, toggle }) {
       <Burger
         onClick={() => toggle(!status)}
         active={status}
-        burger="arrowturn"
+        burger="arrow"
         color="#dc9624"
         hoverOpacity={0.6}
         scale={0.6}

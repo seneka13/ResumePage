@@ -1,0 +1,107 @@
+@import '../../styles/vars.scss';
+
+
+.title {
+    padding-top: 10px;
+    color: $uppercase;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.iconLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before,
+    &:after {
+        content: "";
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
+    }
+}
+
+.icon {
+    margin: 0px 5px;
+    color: $uppercase;
+    width: 25px;
+    height: 25px;
+}
+
+.contactCard {
+    background: $side-color;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 56, 56, 0.856);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    width: 100%;
+    padding: 20px;
+    color: $txt-color;
+    transition: transform ease 0.6s;
+    font-size: 16px;
+
+    .contactCircle {
+        border-radius: 50%;
+        border: 1px solid $uppercase;
+        width: 70px;
+        height: 70px;
+        background-color: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            transition: color ease 1s
+        }
+    }
+
+
+    .contactContent {
+        text-align: justify;
+        font-size: 90%;
+
+        a {
+            font-size: 90%;
+            transition: color ease 0.4s;
+
+            &:hover {
+                color: $uppercase;
+            }
+        }
+    }
+
+    .contactIcons {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .contactIcon {
+            margin-right: 5px;
+            width: 30px;
+            &:hover {
+                color: $uppercase;
+            }
+        }
+
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.06);
+
+        .contactCircle {
+            background-color: $uppercase;
+
+            .icon {
+                color: inherit;
+            }
+        }
+    }
+}

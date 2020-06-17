@@ -10,8 +10,8 @@ function SocialIcons() {
   const socialLinks = [
     { id: 1, social: Facebook, href: 'https://www.facebook.com/profile.php?id=100024608370678' },
     { id: 2, social: Github, href: 'https://github.com/seneka13' },
-    { id: 3, social: Telegram, href: 'https://telegram.org//' },
-    { id: 4, social: Whatsapp, href: 'https://www.whatsapp.com/' },
+    { id: 3, social: Telegram, href: 'https://telegram.im/@seneka13' },
+    { id: 4, social: Whatsapp, href: 'https://wa.me/996773972279' },
     { id: 5, social: Linkedin, href: 'https://www.linkedin.com/feed/?trk=404_page' },
   ]
 
