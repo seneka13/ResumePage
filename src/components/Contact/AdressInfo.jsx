@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import React from 'react'
 import { Col } from 'react-bootstrap'
 import AddressIcon from '../Icons/AddressIcon'
@@ -14,7 +15,7 @@ function AdressInfo() {
         </div>
         <div className={style.contactContent}>Страна: Кыргызстан <br /> Город: Бишкек <br /> Район: Асанбай 13-18</div>
         <div className={style.contactIcons}>
-          <a href="https://sam_mos13@mail.ru" target="_blank" rel="noreferrer noopener"><MapsIcon className={style.contactIcon} /></a>
+          <a href="https://goo.gl/maps/tgcYHQ6oyXZP3ChW6" target="_blank" rel="noreferrer noopener"><MapsIcon className={style.contactIcon} /></a>
         </div>
       </div>
     </Col>

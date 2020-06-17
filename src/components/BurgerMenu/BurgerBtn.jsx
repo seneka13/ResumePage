@@ -7,12 +7,6 @@ import styles from './burger.module.scss'
 import { toggleMenu } from '../../store/action'
 
 function BurgerBtn({ status, toggle }) {
-  const window = document.body
-
-  window.addEventListener('dblclick', () => {
-    toggle(false)
-  })
-
   return (
     <div className={styles.burgerBtn}>
       <Burger
