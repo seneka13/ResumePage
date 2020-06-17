@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ResumePage/static/css/main.f3ec4b01.chunk.css",
-    "main.js": "/ResumePage/static/js/main.0aa678e2.chunk.js",
-    "main.js.map": "/ResumePage/static/js/main.0aa678e2.chunk.js.map",
+    "main.css": "/ResumePage/static/css/main.cda5c16e.chunk.css",
+    "main.js": "/ResumePage/static/js/main.0585f2b9.chunk.js",
+    "main.js.map": "/ResumePage/static/js/main.0585f2b9.chunk.js.map",
     "runtime-main.js": "/ResumePage/static/js/runtime-main.ad3477bb.js",
     "runtime-main.js.map": "/ResumePage/static/js/runtime-main.ad3477bb.js.map",
     "static/css/2.42836a8c.chunk.css": "/ResumePage/static/css/2.42836a8c.chunk.css",
-    "static/js/2.050d858a.chunk.js": "/ResumePage/static/js/2.050d858a.chunk.js",
-    "static/js/2.050d858a.chunk.js.map": "/ResumePage/static/js/2.050d858a.chunk.js.map",
+    "static/js/2.e1a0570d.chunk.js": "/ResumePage/static/js/2.e1a0570d.chunk.js",
+    "static/js/2.e1a0570d.chunk.js.map": "/ResumePage/static/js/2.e1a0570d.chunk.js.map",
     "index.html": "/ResumePage/index.html",
-    "precache-manifest.11dff41374b75fab06d493ce3f518f1a.js": "/ResumePage/precache-manifest.11dff41374b75fab06d493ce3f518f1a.js",
+    "precache-manifest.9297413ffb8985d88fa4e28e8ca9bfdb.js": "/ResumePage/precache-manifest.9297413ffb8985d88fa4e28e8ca9bfdb.js",
     "service-worker.js": "/ResumePage/service-worker.js",
     "static/css/2.42836a8c.chunk.css.map": "/ResumePage/static/css/2.42836a8c.chunk.css.map",
-    "static/css/main.f3ec4b01.chunk.css.map": "/ResumePage/static/css/main.f3ec4b01.chunk.css.map",
-    "static/js/2.050d858a.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.050d858a.chunk.js.LICENSE.txt",
+    "static/css/main.cda5c16e.chunk.css.map": "/ResumePage/static/css/main.cda5c16e.chunk.css.map",
+    "static/js/2.e1a0570d.chunk.js.LICENSE.txt": "/ResumePage/static/js/2.e1a0570d.chunk.js.LICENSE.txt",
     "static/media/homepage.module.scss": "/ResumePage/static/media/Samj.d130ad53.jpg",
     "static/media/contact.jpg": "/ResumePage/static/media/contact.06471bc3.jpg",
     "static/media/portrait.png": "/ResumePage/static/media/portrait.c0649eaf.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.ad3477bb.js",
     "static/css/2.42836a8c.chunk.css",
-    "static/js/2.050d858a.chunk.js",
-    "static/css/main.f3ec4b01.chunk.css",
-    "static/js/main.0aa678e2.chunk.js"
+    "static/js/2.e1a0570d.chunk.js",
+    "static/css/main.cda5c16e.chunk.css",
+    "static/js/main.0585f2b9.chunk.js"
   ]
 }
