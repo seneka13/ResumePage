@@ -12,10 +12,10 @@ function BurgerBtn({ status, toggle }) {
       <Burger
         onClick={() => toggle(!status)}
         active={status}
-        burger="arrow"
+        burger="spin"
         color="#dc9624"
         hoverOpacity={0.6}
-        scale={0.6}
+        scale={0.7}
         style={{ outline: 'none' }}
       />
     </div>

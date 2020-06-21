@@ -1,8 +1,7 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import PageWrapper from '../PageWrapper'
 import Card from './Card'
-import styles from './portfolio.module.scss'
 import contactList from '../../img/contact.jpg'
 
 
@@ -10,14 +9,26 @@ function Portfolio() {
   return (
     <PageWrapper>
       <Container>
-        <div className={styles.portfolioList}>
+        <Row className="pt-5">
           <Card
             link="/portfolio/contact-list"
-            title="Contact list"
-            desc="App for create contacts"
+            title="Контактный лист"
+            desc="Приложения для добавления контактов и описания к ник"
             image={contactList}
           />
-        </div>
+          <Card
+            link="/portfolio/contact-list"
+            title="Контактный лист"
+            desc="Приложения для добавления контактов и описания к ник"
+            image=""
+          />
+          <Card
+            link="/portfolio/contact-list"
+            title="Контактный лист"
+            desc="Приложения для добавления контактов и описания к ник"
+            image={contactList}
+          />
+        </Row>
       </Container>
     </PageWrapper>
   )

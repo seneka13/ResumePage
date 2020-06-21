@@ -12,13 +12,9 @@
     }
 }
 
-.phone {
-    
-}
+.phone {}
 
-.adr {
-    
-}
+.adr {}
 
 .ava {
     width: 100px;
@@ -51,39 +47,54 @@
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 10px;
-    background: $txt-color;
-    height: 300px;
-}
-
-form {
+    background: $side-color;
+    padding: 20px;
+    border: 1px solid $border-color;
+    box-shadow: 0 0 10px rgba(59, 56, 56, 0.856);
+    border-radius: 7px;
+    color: $txt-color;
     text-align: center;
+
+    input,
+    textarea {
+        background: $border-color;
+        color: $txt-color;
+        border: none;
+    }
+
+    input:focus,
+    textarea:focus {
+        box-shadow: none;
+        background: $border-color;
+        color: $txt-color;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: $txt-color;
+    }
+
 }
 
-.form input {
-    padding: 5px;
+.formGroup {
+    margin-bottom: 0px;
 }
 
 .formBtn {
     border: none;
-    background: $line-color;
+    background: $btn-color;
     color: $txt-color;
     padding: 10px;
     border-radius: 5px;
+    width: 80%;
 
     &:focus {
         outline: none;
     }
 
     &:hover {
-        color: $line-color;
-        background: $txt-color;
-        border: 1px solid $line-color;
+        color: $txt-color;
+        background: $uppercase;
         cursor: pointer;
     }
 }

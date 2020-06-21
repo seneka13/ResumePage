@@ -35,7 +35,7 @@ function ProgressCircles() {
                             value={value}
                             text={`${value}%`}
                             styles={buildStyles({
-                              pathTransitionDuration: 2,
+                              pathTransitionDuration: 5,
                               textSize: '14px',
                               pathColor: '#dc9624',
                               textColor: '#fff',
