@@ -15,6 +15,7 @@ function ContactForm({ form, contact }) {
     phone: '',
     address: '',
     desc: '',
+    err: '',
   }
 
   const reducer = (state, action) => {
@@ -32,6 +33,12 @@ function ContactForm({ form, contact }) {
           phone: '',
           address: '',
           desc: '',
+          err: '',
+        }
+      case 'FORM_ERR':
+        return {
+          ...state,
+          err: 'Заполните форму*',
         }
       default:
         throw new Error()
@@ -39,8 +46,7 @@ function ContactForm({ form, contact }) {
   }
 
   const [state, dispatch] = React.useReducer(reducer, initialState)
-  const { photo, name, phone, address, desc } = state
-
+  const { photo, name, phone, address, desc, err } = state
 
   const createContact = () => {
     const newContact = {
@@ -51,6 +57,12 @@ function ContactForm({ form, contact }) {
       desc,
       imgSrc: photo,
     }
+
+    if (!name && !phone && !address) {
+      dispatch({ type: 'FORM_ERR' })
+      return
+    }
+
 
     form([...contact, newContact])
     dispatch({ type: 'CLEAR_FIELDS' })
@@ -65,20 +77,21 @@ function ContactForm({ form, contact }) {
         </Form.Group>
         <Form.Group className={styles.formGroup} controlId="Name">
           <Form.Label />
-          <Form.Control value={name} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'name', fieldValue: e.target.value })} type="text" placeholder="Имя" />
+          <Form.Control value={name} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'name', fieldValue: e.target.value })} type="text" placeholder="Имя*" />
         </Form.Group>
         <Form.Group className={styles.formGroup} controlId="Phone">
           <Form.Label />
-          <Form.Control value={phone} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'phone', fieldValue: e.target.value })} type="text" placeholder="Телефон" />
+          <Form.Control value={phone} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'phone', fieldValue: e.target.value })} type="text" placeholder="Телефон*" />
         </Form.Group>
         <Form.Group className={styles.formGroup} controlId="Address">
           <Form.Label />
-          <Form.Control value={address} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'address', fieldValue: e.target.value })} type="text" placeholder="Адресс" />
+          <Form.Control value={address} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'address', fieldValue: e.target.value })} type="text" placeholder="Адресс*" />
         </Form.Group>
-        <Form.Group controlId="Description">
+        <Form.Group className={styles.formGroup} controlId="Description">
           <Form.Label />
           <Form.Control as="textarea" rows="3" placeholder="Описание" />
         </Form.Group>
+        <div className={styles.error}>{err}</div>
         <button type="button" className={styles.formBtn} onClick={createContact}>Создать контакт</button>
       </Form>
     </Col>

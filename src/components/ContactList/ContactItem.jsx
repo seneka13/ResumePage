@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import style from './contactlist.module.scss'
 
-function ContactItem( props ) {
+function ContactItem(props) {
   return (
     <NavLink to={{
       pathname: `/portfolio/contact-list/${props.id}`,

@@ -54,7 +54,6 @@
     border-radius: 7px;
     color: $txt-color;
     text-align: center;
-
     input,
     textarea {
         background: $border-color;
@@ -97,4 +96,9 @@
         background: $uppercase;
         cursor: pointer;
     }
+}
+
+.error {
+    height: 30px;
+    color: $error-color;
 }
