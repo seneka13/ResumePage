@@ -1,7 +1,7 @@
 import React from 'react'
 import shortid from 'shortid'
 import PropTypes from 'prop-types'
-import { Form, Col } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { addContact } from '../../store/action'
 import styles from './contactlist.module.scss'
@@ -38,7 +38,7 @@ function ContactForm({ form, contact }) {
       case 'FORM_ERR':
         return {
           ...state,
-          err: 'Заполните форму*',
+          err: 'Заполните форму!*',
         }
       default:
         throw new Error()
@@ -63,38 +63,38 @@ function ContactForm({ form, contact }) {
       return
     }
 
+    console.log(desc)
+
 
     form([...contact, newContact])
     dispatch({ type: 'CLEAR_FIELDS' })
   }
 
   return (
-    <Col xs={12} md={6} lg={4}>
-      <Form className={styles.form}>
-        <Form.Group className={styles.formGroup} controlId="URL фото">
-          <Form.Label />
-          <Form.Control value={photo} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'photo', fieldValue: e.target.value })} type="text" placeholder="Ссылка на фото" />
-        </Form.Group>
-        <Form.Group className={styles.formGroup} controlId="Name">
-          <Form.Label />
-          <Form.Control value={name} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'name', fieldValue: e.target.value })} type="text" placeholder="Имя*" />
-        </Form.Group>
-        <Form.Group className={styles.formGroup} controlId="Phone">
-          <Form.Label />
-          <Form.Control value={phone} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'phone', fieldValue: e.target.value })} type="text" placeholder="Телефон*" />
-        </Form.Group>
-        <Form.Group className={styles.formGroup} controlId="Address">
-          <Form.Label />
-          <Form.Control value={address} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'address', fieldValue: e.target.value })} type="text" placeholder="Адресс*" />
-        </Form.Group>
-        <Form.Group className={styles.formGroup} controlId="Description">
-          <Form.Label />
-          <Form.Control as="textarea" rows="3" placeholder="Описание" />
-        </Form.Group>
-        <div className={styles.error}>{err}</div>
-        <button type="button" className={styles.formBtn} onClick={createContact}>Создать контакт</button>
-      </Form>
-    </Col>
+    <Form className={styles.form}>
+      <Form.Group className={styles.formGroup} controlId="URL фото">
+        <Form.Label />
+        <Form.Control value={photo} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'photo', fieldValue: e.target.value })} type="text" placeholder="Ссылка на фото" />
+      </Form.Group>
+      <Form.Group className={styles.formGroup} controlId="Name">
+        <Form.Label />
+        <Form.Control value={name} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'name', fieldValue: e.target.value })} type="text" placeholder="Имя*" />
+      </Form.Group>
+      <Form.Group className={styles.formGroup} controlId="Phone">
+        <Form.Label />
+        <Form.Control value={phone} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'phone', fieldValue: e.target.value })} type="text" placeholder="Телефон*" />
+      </Form.Group>
+      <Form.Group className={styles.formGroup} controlId="Address">
+        <Form.Label />
+        <Form.Control value={address} onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'address', fieldValue: e.target.value })} type="text" placeholder="Адресс*" />
+      </Form.Group>
+      <Form.Group className={styles.formGroup} controlId="Description">
+        <Form.Label />
+        <Form.Control as="textarea" rows="3" onChange={(e) => dispatch({ type: 'ADD_CONTACT', field: 'desc', fieldValue: e.target.value })} type="text" placeholder="Описание" />
+      </Form.Group>
+      <div className={styles.error}>{err}</div>
+      <button type="button" className={styles.formBtn} onClick={createContact}>Создать контакт</button>
+    </Form>
   )
 }
 

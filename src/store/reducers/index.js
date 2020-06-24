@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import toggleMenu from './toggle'
+import toggle from './toggle'
 import contactForm from './form'
 
 
 export default combineReducers({
-  toggle: toggleMenu,
+  toggle,
   form: contactForm,
 })

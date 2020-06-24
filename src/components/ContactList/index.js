@@ -1,20 +1,30 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Modal } from 'react-bootstrap'
+
 import { connect } from 'react-redux'
 import { array } from 'prop-types'
+import PlusIcon from '../Icons/PlusIcon'
 import ContactForm from './ContactForm'
 import Contacts from './Contacts'
 import PageWrapper from '../PageWrapper'
-import style from './contactlist.module.scss'
+import styles from './contactlist.module.scss'
+
 
 function ContactList({ contact }) {
+  const [show, setShow] = React.useState(false)
+
+  const handleClick = () => setShow(!show)
+
   return (
     <PageWrapper>
       <Container>
-        <div className={style.content}>
+        <button className={styles.addBtn} type="button" onClick={handleClick}><PlusIcon className={styles.icon} /></button>
+        <Modal className={styles.formModal} show={show} onHide={handleClick}>
           <ContactForm />
+        </Modal>
+        <Row className="pt-5 pb-5">
           <Contacts contacts={contact} />
-        </div>
+        </Row>
       </Container>
     </PageWrapper>
   )

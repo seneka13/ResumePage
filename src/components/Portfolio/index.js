@@ -13,19 +13,7 @@ function Portfolio() {
           <Card
             link="/portfolio/contact-list"
             title="Контактный лист"
-            desc="Приложения для добавления контактов и описания к ник"
-            image={contactList}
-          />
-          <Card
-            link="/portfolio/contact-list"
-            title="Контактный лист"
-            desc="Приложения для добавления контактов и описания к ник"
-            image=""
-          />
-          <Card
-            link="/portfolio/contact-list"
-            title="Контактный лист"
-            desc="Приложения для добавления контактов и описания к ник"
+            desc="Приложения для добавления контактов и описания к ним"
             image={contactList}
           />
         </Row>
