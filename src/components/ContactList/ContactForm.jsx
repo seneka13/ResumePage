@@ -58,12 +58,10 @@ function ContactForm({ form, contact }) {
       imgSrc: photo,
     }
 
-    if (!name && !phone && !address) {
+    if (!name || !phone || !address) {
       dispatch({ type: 'FORM_ERR' })
       return
     }
-
-    console.log(desc)
 
 
     form([...contact, newContact])

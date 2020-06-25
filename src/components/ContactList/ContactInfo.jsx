@@ -8,7 +8,6 @@ import style from './contactlist.module.scss'
 import PageWapper from '../PageWrapper'
 
 function ContactInfo(props) {
-  console.log(props)
   const { imgSrc, name, phone, address, desc } = props.location.state.contact
   return (
     <PageWapper>
