@@ -16,7 +16,7 @@ function ProgressCircles() {
     { progName: 'Redux', level: '62' },
     { progName: 'Bootstrap', level: '73' },
     { progName: 'Webpack', level: '61' },
-    { progName: 'Babel', level: '60' },
+    { progName: 'Git', level: '60' },
     { progName: 'npm', level: '62' },
     { progName: 'BEM', level: '87' },
   ]

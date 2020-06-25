@@ -16,9 +16,9 @@ function portCard({ link, image = placeholder, alt = '', title, desc }) {
           <Card.Text>
             {desc}
           </Card.Text>
-          <NavLink to={link}>
+          <a href={link} target="_blank" rel="noreferrer noopener">
             <button type="button" className={styles.cardBtn}>Посмотреть</button>
-          </NavLink>
+          </a>
         </Card.Body>
       </Card>
     </Col>
