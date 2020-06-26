@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Resume from './components/Resume'
 import ContactList from './components/ContactList'
+import SafeCity from './components/SafeCity'
 import ContactInfo from './components/ContactList/ContactInfo'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" component={Contact} exact />
         <Route path="/portfolio" component={Portfolio} exact />
         <Route path="/portfolio/contact-list" component={ContactList} exact />
+        <Route path="/portfolio/safe-city" component={SafeCity} exact />
         <Route path="/portfolio/contact-list/:contactId" component={ContactInfo} exact />
       </Switch>
     </BrowserRouter>

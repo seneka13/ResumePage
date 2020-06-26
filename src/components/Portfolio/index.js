@@ -12,7 +12,7 @@ function Portfolio() {
       <Container>
         <Row className="pt-5">
           <Card
-            link="http://134.209.252.196"
+            link="/portfolio/safe-city"
             title="MDN Group"
             desc="Сайт ОсОО Охранное агентство 'Безопасный город'"
             image={safe}
