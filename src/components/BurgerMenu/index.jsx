@@ -9,7 +9,6 @@ import BurgerBtn from './BurgerBtn'
 function BurgerMenu({ status, toggle }) {
   const burgerRef = React.useRef(null)
 
-
   React.useEffect(() => {
     const handleClick = (e) => {
       if (burgerRef.current.contains(e.target)) {

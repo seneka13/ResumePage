@@ -1,12 +1,21 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
 import PageWrapper from '../PageWrapper'
 import Card from './Card'
+import { toggleMenu } from '../../store/action'
 import contactList from '../../img/contact.jpg'
 import safe from '../../img/safe.jpg'
 
 
 function Portfolio() {
+  const dispatch = useDispatch()
+
+  React.useEffect(() => {
+    const toggle = () => dispatch(toggleMenu())
+    toggle(false)
+  }, [dispatch])
+
   return (
     <PageWrapper>
       <Container>

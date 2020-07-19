@@ -1,9 +1,17 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { useDispatch } from 'react-redux'
+import { toggleMenu } from '../../store/action'
 import styles from './homepage.module.scss'
 import PageWrapper from '../PageWrapper'
 
 function Development() {
+  const dispatch = useDispatch()
+
+  React.useEffect(() => {
+    const toggle = () => dispatch(toggleMenu())
+    toggle(false)
+  }, [dispatch])
   return (
     <PageWrapper>
       <div className={styles.home}>
