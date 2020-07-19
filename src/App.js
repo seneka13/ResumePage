@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/App.scss'
@@ -24,6 +25,26 @@ function App() {
         <Route path="/portfolio/safe-city" component={SafeCity} exact />
         <Route path="/portfolio/contact-list/:contactId" component={ContactInfo} exact />
       </Switch>
+=======
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/App.scss';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import About from './components/About';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
+
+function App() {
+  return (
+    <BrowserRouter>
+    <Switch>
+        <Route path="/" component={About} exact/>
+        <Route path="/resume" component={Resume} exact/>
+        <Route path="/contact" component={Contact} exact/>
+        <Route path="/portfolio" component={Portfolio} exact/>
+    </Switch>
+>>>>>>> 7df9cb3e35e168c415a731479135da8a3689bd6c
     </BrowserRouter>
   )
 }
