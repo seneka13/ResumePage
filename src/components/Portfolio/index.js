@@ -3,10 +3,13 @@ import { Container, Row } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import PageWrapper from '../PageWrapper'
 import Card from './Card'
+import SkilssIcon from '../Icons/SkillsIcon'
 import { toggleMenu } from '../../store/actions'
 import contactList from '../../img/contact.jpg'
 import safe from '../../img/stock2.jpg'
+import PageTitle from '../PageTitle'
 import share from '../../img/event.png'
+import styles from './portfolio.module.scss'
 
 
 function Portfolio() {
@@ -19,12 +22,13 @@ function Portfolio() {
 
   return (
     <PageWrapper>
-      <Container>
+      <Container className="pt-5">
+        <PageTitle text="Мои работы" icon={<SkilssIcon className={styles.icon} />} />
         <Row className="pt-5">
           <Card
             link="/portfolio/shareyself"
             title="ShareYSelf"
-            desc="Веб-сервис ShareYSelf - для создания событий и обмена идеями"
+            desc="Веб-сервис - для создания событий и обмена идеями"
             image={share}
           />
           <Card

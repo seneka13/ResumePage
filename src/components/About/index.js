@@ -7,6 +7,7 @@ import SkillsIcon from '../Icons/SkillsIcon'
 import AboutIcon from '../Icons/AboutIcon'
 import { toggleMenu } from '../../store/actions'
 import ProgressCircles from './ProgressCircles'
+import PageTitle from '../PageTitle'
 import style from './about.module.scss'
 
 
@@ -21,15 +22,9 @@ function About() {
   return (
     <PageWrapper>
       <Container className="pt-5">
-        <div className={style.iconLine}>
-          <AboutIcon className={style.icon} />
-        </div>
-        <h2 className={style.title}>Обо мне</h2>
+        <PageTitle text="Обо мне" icon={<AboutIcon className={style.icon} />} />
         <AboutInfo />
-        <div className={style.iconLine}>
-          <SkillsIcon className={style.icon} />
-        </div>
-        <h2 className={style.title}>Мои навыки</h2>
+        <PageTitle text="Мои навыки" icon={<SkillsIcon className={style.icon} />} />
         <ProgressCircles />
       </Container>
     </PageWrapper>

@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { string } from 'prop-types'
 import { NavLink } from 'react-router-dom'
 import { Card, Col } from 'react-bootstrap'
 import placeholder from '../../img/placeholder.png'
@@ -8,7 +8,7 @@ import styles from './portfolio.module.scss'
 
 function portCard({ link, image = placeholder, alt = '', title, desc }) {
   return (
-    <Col xs={12} md={4} className="mb-4">
+    <Col xs={12} md={6} lg={4} className="mb-4">
       <Card className={styles.card}>
         <Card.Img src={image} alt={alt} />
         <Card.Body className={styles.cardBody}>
@@ -26,11 +26,11 @@ function portCard({ link, image = placeholder, alt = '', title, desc }) {
 }
 
 portCard.propTypes = {
-  link: PropTypes.string.isRequired,
-  image: PropTypes.string,
-  alt: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  link: string,
+  image: string,
+  alt: string,
+  title: string,
+  desc: string,
 }
 
 export default portCard

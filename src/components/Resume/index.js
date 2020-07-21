@@ -1,8 +1,9 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import { Container, Row } from 'react-bootstrap'
 import PageWrapper from '../PageWrapper'
-import Development from '../Development'
 import { toggleMenu } from '../../store/actions'
+import ResumeCard from './ResumeCard'
 
 function Resume() {
   const dispatch = useDispatch()
@@ -13,7 +14,12 @@ function Resume() {
   }, [dispatch])
   return (
     <PageWrapper>
-      <Development />
+      <Container>
+        <Row className="pt-5">
+          <ResumeCard />
+        </Row>
+      </Container>
+
     </PageWrapper>
   )
 }

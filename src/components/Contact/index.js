@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux'
 import PageWrapper from '../PageWrapper'
 import ContactIcon from '../Icons/ContactIcon'
 import ContactInfo from './ContactInfo'
+import PageTitle from '../PageTitle'
 import { toggleMenu } from '../../store/actions'
 import style from './contact.module.scss'
 
@@ -18,10 +19,7 @@ function Contact() {
   return (
     <PageWrapper>
       <Container className="pt-5">
-        <div className={style.iconLine}>
-          <ContactIcon className={style.icon} />
-        </div>
-        <h2 className={style.title}>Свяжитесь со мной</h2>
+        <PageTitle text="Свяжитесь со мной" icon={<ContactIcon className={style.icon} />} />
         <ContactInfo />
       </Container>
     </PageWrapper>

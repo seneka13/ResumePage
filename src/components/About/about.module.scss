@@ -39,20 +39,6 @@
     text-align: center;
 }
 
-.iconLine {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:before,
-    &:after {
-        content: "";
-        width: 40px;
-        height: 1px;
-        background: linear-gradient(to left, #fa9b1b 7%, #dca52e 93%);
-    }
-}
-
 .icon {
     margin: 0px 5px;
     color: $uppercase;

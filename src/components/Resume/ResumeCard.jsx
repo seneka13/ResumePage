@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { string } from 'prop-types'
 import { Col } from 'react-bootstrap'
 import styles from './resume.module.scss'
 
@@ -17,9 +17,9 @@ function ResumeCard({ title, desc, date }) {
 }
 
 ResumeCard.propTypes = {
-  date: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
+  date: string,
+  title: string,
+  desc: string,
 }
 
 export default ResumeCard
