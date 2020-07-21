@@ -11,6 +11,10 @@
     border-radius: 7px;
     color: $txt-color;
     text-align: center;
+    img {
+        max-height: 300px;
+        min-height: 300px;
+    }
 }
 
 
@@ -26,6 +30,7 @@
     border-radius: 5px;
     font-size: 16px;
     color: $txt-color;
+    
 
     &:hover {
         background-color: $uppercase;

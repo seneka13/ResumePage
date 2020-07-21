@@ -5,7 +5,7 @@ import PageWrapper from '../PageWrapper'
 import AboutInfo from './AboutInfo'
 import SkillsIcon from '../Icons/SkillsIcon'
 import AboutIcon from '../Icons/AboutIcon'
-import { toggleMenu } from '../../store/action'
+import { toggleMenu } from '../../store/actions'
 import ProgressCircles from './ProgressCircles'
 import style from './about.module.scss'
 
@@ -14,7 +14,7 @@ function About() {
   const dispatch = useDispatch()
 
   React.useEffect(() => {
-    const toggle = () => dispatch(toggleMenu())
+    const toggle = (show) => dispatch(toggleMenu(show))
     toggle(false)
   }, [dispatch])
 

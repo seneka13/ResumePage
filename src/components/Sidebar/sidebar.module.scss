@@ -33,12 +33,13 @@
 .social {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 130px;
     margin-top: 20px;
 }
 
 .social-icon {
     color: $txt-color;
+    transition: color ease 0.7s;
 
     &:hover {
         color: $uppercase;

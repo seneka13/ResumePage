@@ -3,7 +3,7 @@ import shortid from 'shortid'
 import PropTypes from 'prop-types'
 import { Form } from 'react-bootstrap'
 import { connect } from 'react-redux'
-import { addContact } from '../../store/action'
+import { addContact } from '../../store/actions'
 import styles from './contactlist.module.scss'
 
 

@@ -3,16 +3,17 @@ import { Container, Row } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
 import PageWrapper from '../PageWrapper'
 import Card from './Card'
-import { toggleMenu } from '../../store/action'
+import { toggleMenu } from '../../store/actions'
 import contactList from '../../img/contact.jpg'
-import safe from '../../img/safe.jpg'
+import safe from '../../img/stock2.jpg'
+import share from '../../img/event.png'
 
 
 function Portfolio() {
   const dispatch = useDispatch()
 
   React.useEffect(() => {
-    const toggle = () => dispatch(toggleMenu())
+    const toggle = (show) => dispatch(toggleMenu(show))
     toggle(false)
   }, [dispatch])
 
@@ -20,6 +21,12 @@ function Portfolio() {
     <PageWrapper>
       <Container>
         <Row className="pt-5">
+          <Card
+            link="/portfolio/shareyself"
+            title="ShareYSelf"
+            desc="Веб-сервис ShareYSelf - для создания событий и обмена идеями"
+            image={share}
+          />
           <Card
             link="/portfolio/safe-city"
             title="MDN Group"

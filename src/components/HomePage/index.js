@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { useDispatch } from 'react-redux'
-import { toggleMenu } from '../../store/action'
+import { toggleMenu } from '../../store/actions'
 import styles from './homepage.module.scss'
 import PageWrapper from '../PageWrapper'
 

@@ -10,6 +10,7 @@ import Resume from './components/Resume'
 import ContactList from './components/ContactList'
 import SafeCity from './components/SafeCity'
 import ContactInfo from './components/ContactList/ContactInfo'
+import ShareYSelf from './components/ShareYSelf'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/portfolio" component={Portfolio} exact />
         <Route path="/portfolio/contact-list" component={ContactList} exact />
         <Route path="/portfolio/safe-city" component={SafeCity} exact />
+        <Route path="/portfolio/shareyself" component={ShareYSelf} exact />
         <Route path="/portfolio/contact-list/:contactId" component={ContactInfo} exact />
       </Switch>
     </BrowserRouter>

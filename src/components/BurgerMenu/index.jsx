@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bool, func } from 'prop-types'
 import styles from './burger.module.scss'
 import Sidebar from '../Sidebar'
-import { toggleMenu } from '../../store/action'
+import { toggleMenu } from '../../store/actions'
 import BurgerBtn from './BurgerBtn'
 
 function BurgerMenu({ status, toggle }) {
