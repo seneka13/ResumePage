@@ -3,7 +3,11 @@ import { useDispatch } from 'react-redux'
 import { Container, Row } from 'react-bootstrap'
 import PageWrapper from '../PageWrapper'
 import { toggleMenu } from '../../store/actions'
+import ResumeIcon from '../Icons/ResumeIcon'
+import PortfolioIcon from '../Icons/PortfolioIcon'
+import PageTitle from '../PageTitle'
 import ResumeCard from './ResumeCard'
+import styles from './resume.module.scss'
 
 function Resume() {
   const dispatch = useDispatch()
@@ -14,8 +18,15 @@ function Resume() {
   }, [dispatch])
   return (
     <PageWrapper>
-      <Container>
-        <Row className="pt-5">
+      <Container className="pt-5">
+        <PageTitle text="Образование" icon={<ResumeIcon className={styles.icon} />} />
+        <Row className="pt-4">
+          <ResumeCard />
+          <ResumeCard />
+        </Row>
+        <PageTitle text="Опыт работы" icon={<PortfolioIcon className={styles.icon} />} />
+        <Row className="pt-4">
+          <ResumeCard />
           <ResumeCard />
         </Row>
       </Container>

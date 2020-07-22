@@ -4,5 +4,17 @@
 .resumeCard {
     width: 100%;
     height: 300px;
-    border: 1px solid $uppercase;
+    border: 1px solid $border-color;
+    box-shadow: 0 0 10px rgba(59, 56, 56, 0.856);
+    border-radius: 7px;
+    color: $txt-color;
+    text-align: center;
+    background: $side-color;
+}
+
+.icon {
+    margin: 0px 5px;
+    color: $uppercase;
+    width: 25px;
+    height: 25px;
 }

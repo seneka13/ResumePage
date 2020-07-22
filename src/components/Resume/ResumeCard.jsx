@@ -6,7 +6,7 @@ import styles from './resume.module.scss'
 
 function ResumeCard({ title, desc, date }) {
   return (
-    <Col xs={12} md={6} className="mb-4">
+    <Col xs={12} md={6} className="mb-5">
       <div className={styles.resumeCard}>
         <h4>{title}</h4>
         <p>{date}</p>
