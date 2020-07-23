@@ -8,7 +8,7 @@ function AboutInfo() {
   return (
     <div className={`${styles.aboutInfo} mb-5 mt-5`}>
       <Row>
-        <Col xs={12} md={6} lg={3}>
+        <Col xs={12} md={6} lg={3} className="d-flex align-items-center">
           <img src={portrait} alt="portrait" />
         </Col>
         <Col xs={12} md={6} lg={9}>
