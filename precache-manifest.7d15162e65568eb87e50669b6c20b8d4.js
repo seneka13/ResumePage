@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7dc58ab338ed34310dda2d64adb61d65",
+    "revision": "52aaf0617469ddf4613b76826a26735c",
     "url": "/ResumePage/index.html"
   },
   {
-    "revision": "d21360c3686f236e0369",
+    "revision": "8fe43dde3e9b2203e0b3",
     "url": "/ResumePage/static/css/2.42836a8c.chunk.css"
   },
   {
-    "revision": "8115c0e65fb6b3f93976",
-    "url": "/ResumePage/static/css/main.6075d230.chunk.css"
+    "revision": "63b050e9e6c3cdd74a19",
+    "url": "/ResumePage/static/css/main.29e74116.chunk.css"
   },
   {
-    "revision": "d21360c3686f236e0369",
-    "url": "/ResumePage/static/js/2.cecdd714.chunk.js"
+    "revision": "8fe43dde3e9b2203e0b3",
+    "url": "/ResumePage/static/js/2.dc8ae105.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/ResumePage/static/js/2.cecdd714.chunk.js.LICENSE.txt"
+    "url": "/ResumePage/static/js/2.dc8ae105.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8115c0e65fb6b3f93976",
-    "url": "/ResumePage/static/js/main.a96d6a8c.chunk.js"
+    "revision": "63b050e9e6c3cdd74a19",
+    "url": "/ResumePage/static/js/main.6cec8c6d.chunk.js"
   },
   {
     "revision": "709211295984dde7379a",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ResumePage/static/media/contact.06471bc3.jpg"
   },
   {
+    "revision": "701243cc4330386949a7b84841e307bd",
+    "url": "/ResumePage/static/media/event.701243cc.png"
+  },
+  {
     "revision": "6f38398d79ba0f69733befaea2e0f711",
     "url": "/ResumePage/static/media/porplaceholder.6f38398d.jpg"
   },
@@ -40,12 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ResumePage/static/media/portrait.c0649eaf.png"
   },
   {
-    "revision": "9c57d7186c99f1908b91a8f127e0871e",
-    "url": "/ResumePage/static/media/safe.9c57d718.jpg"
+    "revision": "90dc29638282cb8fbd135edf89eccaf3",
+    "url": "/ResumePage/static/media/safecity.90dc2963.png"
   },
   {
     "revision": "620de2cd6084f4123542cca7630e5056",
     "url": "/ResumePage/static/media/sam.620de2cd.jpg"
+  },
+  {
+    "revision": "cbf55806de9a0c2499f434de4d192722",
+    "url": "/ResumePage/static/media/share.cbf55806.png"
+  },
+  {
+    "revision": "0c561e616140891c37d322f7e4e61683",
+    "url": "/ResumePage/static/media/stock2.0c561e61.jpg"
   },
   {
     "revision": "bb2d2951c91d82d11235b019ed02c8e2",
