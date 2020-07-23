@@ -24,7 +24,7 @@ function Portfolio() {
     <PageWrapper>
       <Container className="pt-5">
         <PageTitle text="Мои работы" icon={<SkilssIcon className={styles.icon} />} />
-        <Row className="pt-5">
+        <Row className="pt-5 pb-5">
           <Card
             link="/portfolio/shareyself"
             title="ShareYSelf"

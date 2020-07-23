@@ -1,7 +1,7 @@
 import React from 'react'
 import { string } from 'prop-types'
 import { NavLink } from 'react-router-dom'
-import { Card, Col } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import placeholder from '../../img/placeholder.png'
 import styles from './portfolio.module.scss'
 
@@ -9,18 +9,16 @@ import styles from './portfolio.module.scss'
 function portCard({ link, image = placeholder, alt = '', title, desc }) {
   return (
     <Col xs={12} md={6} lg={4} className="mb-4">
-      <Card className={styles.card}>
-        <Card.Img src={image} alt={alt} />
-        <Card.Body className={styles.cardBody}>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>
-            {desc}
-          </Card.Text>
+      <div className={styles.card}>
+        <img src={image} alt={alt} />
+        <div className={styles.cardBody}>
+          <h4>{title}</h4>
+          <p>{desc}</p>
           <NavLink to={link}>
             <button type="button" className={styles.cardBtn}>Посмотреть</button>
           </NavLink>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
     </Col>
   )
 }

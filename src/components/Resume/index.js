@@ -21,8 +21,17 @@ function Resume() {
       <Container className="pt-5">
         <PageTitle text="Образование" icon={<ResumeIcon className={styles.icon} />} />
         <Row className="pt-4">
-          <ResumeCard />
-          <ResumeCard />
+          <ResumeCard
+            title="It Academy"
+            date="06.12.2019г. - 25.07.2020г."
+            desc="Front-end Development - HTML, CSS, JS. Разработка пользовательских интерфейсов на ReactJS.
+            Прослушано 200 часов лекций. Более 400 часов практики."
+          />
+          <ResumeCard
+            title="КНУ им. Ж. Баласагына"
+            date="06.12.2010г. - 25.07.2015г."
+            desc=""
+          />
         </Row>
         <PageTitle text="Опыт работы" icon={<PortfolioIcon className={styles.icon} />} />
         <Row className="pt-4">

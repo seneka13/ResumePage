@@ -18,12 +18,12 @@
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 250px;
-    width: 90%;
-    padding: 20px;
+    height: 300px;
+    width: 100%;
+    padding: 30px;
     color: $txt-color;
     transition: transform ease 0.6s;
-    font-size: 16px;
+    font-size: 20px;
 
     .contactCircle {
         border-radius: 50%;
@@ -75,7 +75,7 @@
 
     &:hover {
         cursor: pointer;
-        transform: scale(1.06);
+        transform: scale(1.03);
         
 
         .contactCircle {

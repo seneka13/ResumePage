@@ -8,9 +8,10 @@ function ResumeCard({ title, desc, date }) {
   return (
     <Col xs={12} md={6} className="mb-5">
       <div className={styles.resumeCard}>
-        <h4>{title}</h4>
-        <p>{date}</p>
-        <p>{desc}</p>
+        <h4 className={styles.title}>{title}</h4>
+        <time className={styles.date}>{date}</time>
+        <div className={styles.divider} />
+        <p className={styles.desc}>{desc}</p>
       </div>
     </Col>
   )
