@@ -19,8 +19,8 @@ function PhoneInfo() {
           <a href="tel:+996312407310">Тел: +996 (312) 62-05-35 (+181)</a> <br />
         </div>
         <div className={style.contactIcons}>
-          <a href="https://wa.me/996773972279" target="_blank" rel="noreferrer noopener"><Telegram className={style.contactIcon} /></a>
-          <a href="https://telegram.im/@seneka13" target="_blank" rel="noreferrer noopener"><Whatsapp className={style.contactIcon} /></a>
+          <a href="https://telegram.im/@seneka13" target="_blank" rel="noreferrer noopener"><Telegram className={style.contactIcon} /></a>
+          <a href="https://wa.me/996773972279" target="_blank" rel="noreferrer noopener"><Whatsapp className={style.contactIcon} /></a>
         </div>
       </div>
     </Col>
